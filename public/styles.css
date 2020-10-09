@@ -96,6 +96,7 @@ header {
 .card {
     background-color: var(--color-rocket);
     display: grid;
+    cursor: pointer;
 }
 
 .card__image-container img {
@@ -161,4 +162,40 @@ iframe {
     height: 90%;
     position: absolute; /*sempre usa como referencia a tela toda, ou se o pai tiver uma position: relative; ou position:fixed; ele fica absolute respeitoso ao limite do pai*/
     top: 5%;
+}
+
+/*  FEATURED  */
+
+.featured-wrapper.card__image-container {
+    position: relative;
+}
+
+.featured {
+    position: absolute;
+
+    background: #f7d05f;
+    color: #111;
+    padding: 2px 8px;
+    right: 5px;
+    border-radius: 16px;
+    top: -10px;
+}
+
+/* VIDEO PAGE */
+
+.video {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.card__video-container {
+    position: relative;
+    padding-top: 62.5%;
+}
+
+.card__video-container iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: absolute;
 }
